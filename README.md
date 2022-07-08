@@ -1,6 +1,25 @@
 # Django Quickstart
 
-## One liner: copy and paste the code below in your terminal > hit enter > type your project's name (no spaces) > hit enter
+(Original script @ https://github.com/henriquebastos/django-quickstart )
+
+Adjusted to better fit my own initial setup
+
+This template includes:
+
+- Easy settings setup with <a href="https://github.com/henriquebastos/python-decouple">Decouple</a>
+- Support to pytest and pytest-django
+- Use of URL's to manage database access
+- Static assets serving with dj-static with a WSGI server
+- <a href="https://django-jazzmin.readthedocs.io/">Jazzmin</a> for django admin template
+- <a href="https://django-extensions.readthedocs.io/en/latest/">Django extensions</a> for the cool `python manage.py shell_plus` environment 
+
+## One liner:
+
+0. Before doing anything, install and login into <a href="https://devcenter.heroku.com/articles/heroku-cli">heroku-cli</a>
+1. Copy and paste the code below in your terminal
+2. Hit 'Enter'
+3. Type in your project's name (no spaces or funny chars)
+4. Hit 'Enter'
 
 
 ```
@@ -21,3 +40,10 @@ heroku create $PROJECT_NAME && \
 heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` ALLOWED_HOSTS="*" && \
 git push heroku master
 ```
+## Afterwards:
+
+5. Don't forget to change the SECRET_KEY both in .env locally and on heroku ( `heroku config:set SECRET_KEY='secret_key_here'` )
+6. Create a repo
+7. Set it up locally using `git remote add origin https://github.com/YOURNAME/REPO_CREATED/`
+
+

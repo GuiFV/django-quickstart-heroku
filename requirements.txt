@@ -5,3 +5,5 @@ Django
 python-decouple
 gunicorn
 psycopg2-binary
+django-jazzmin
+django-extensions

@@ -6,6 +6,5 @@ __pycache__
 *.pyc
 .venv
 .env
-.{{ PROJECT_NAME }}
 staticfiles
 .ipynb_checkpoints/

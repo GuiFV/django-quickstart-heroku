@@ -37,12 +37,12 @@ git init && \
 git add . && \
 git commit -m 'Initial import' && \
 heroku create $PROJECT_NAME && \
-heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` ALLOWED_HOSTS="*" && \
+heroku config:set DEBUG=True SECRET_KEY=`cat .env | grep SECRET_KEY | cut -d = -f 2` ALLOWED_HOSTS=".herokuapp.com" && \
 git push heroku master
 ```
 ## Afterwards:
 
-5. Don't forget to change the SECRET_KEY both in .env locally and on heroku ( `heroku config:set SECRET_KEY='secret_key_here'` )
+5. Don't forget to change the SECRET_KEY for something more secure both in .env locally and on heroku ( `heroku config:set SECRET_KEY='secret_key_here'` )
 6. Create a repo
 7. Set it up locally using `git remote add origin https://github.com/YOURNAME/REPO_CREATED/`
 

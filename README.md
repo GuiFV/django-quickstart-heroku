@@ -29,7 +29,7 @@ cd $PROJECT_NAME && \
 mkdir $PROJECT_NAME && \
 cd $PROJECT_NAME && \
 python3 -m venv .venv && \
-source .$PROJECT_NAME/bin/activate && \
+source .venv/bin/activate && \
 python -m pip install django && \
 django-admin startproject --template https://github.com/GuiFV/django-quickstart/archive/master.zip --name=Procfile,.env,pytest.ini $PROJECT_NAME . && \
 pip install --prefer-binary -r requirements-dev.txt && \

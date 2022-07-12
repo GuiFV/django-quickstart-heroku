@@ -30,9 +30,10 @@ mkdir $PROJECT_NAME && \
 cd $PROJECT_NAME && \
 python3 -m venv .venv && \
 source .venv/bin/activate && \
-python -m pip install django && \
+python3 -m pip install --upgrade pip && \
+python3 -m pip install django && \
 django-admin startproject --template https://github.com/GuiFV/django-quickstart/archive/master.zip --name=Procfile,.env,pytest.ini $PROJECT_NAME . && \
-pip install --prefer-binary -r requirements-dev.txt && \
+pip3 install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \
 git commit -m 'Initial import' && \

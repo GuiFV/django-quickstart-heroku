@@ -26,8 +26,6 @@ This template includes:
 read PROJECT_NAME && \
 mkdir $PROJECT_NAME && \
 cd $PROJECT_NAME && \
-mkdir $PROJECT_NAME && \
-cd $PROJECT_NAME && \
 python3 -m venv .venv && \
 source .venv/bin/activate && \
 python3 -m pip install --upgrade pip && \

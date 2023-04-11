@@ -1,9 +1,10 @@
-wheel
 dj-database-url
 dj-static
 Django
-python-decouple
-gunicorn
-psycopg2-binary
-django-jazzmin
+django-debug-toolbar
 django-extensions
+django-jazzmin
+gunicorn
+python-decouple
+psycopg2-binary
+wheel

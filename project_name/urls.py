@@ -19,6 +19,7 @@ from django.urls import path
 from {{ project_name }}.core.views import home
 
 urlpatterns = [
-    path('', home, name='home'),
     path('admin/', admin.site.urls),
+    path('__debug__/', include('debug_toolbar.urls')),
+    path('', home, name='home'),
 ]

@@ -8,3 +8,4 @@ gunicorn
 python-decouple
 psycopg2-binary
 wheel
+sqlparse>=0.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
